@@ -1,0 +1,9 @@
+num1=10
+num2=20
+print("NUM1+NUM2=",num1+num2)
+print("NUM1-NUM2=",num1-num2)
+print("NUM1*NUM2=",num1*num2)
+print("NUM1/NUM2=",num1/num2)
+print("5 v 3=",5**3)
+print("20%3=",20%3)
+print("22//7=",22//7)
