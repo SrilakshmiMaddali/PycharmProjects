@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3c8db0db-622e-48f0-aa11-287170e78749" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app4buildwebsite/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app4buildwebsite/.idea/app4buildwebsite.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app4buildwebsite/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app4buildwebsite/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app4buildwebsite/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app4buildwebsite/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app4buildwebsite/script1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app4buildwebsite/static/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app4buildwebsite/templates/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app4buildwebsite/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app4buildwebsite/templates/layout.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1Wesaa7MIcNkJkWDrhol6DssfYS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3c8db0db-622e-48f0-aa11-287170e78749" name="Default Changelist" comment="" />
+      <created>1579521458846</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579521458846</updated>
+    </task>
+    <servers />
+  </component>
+</project>
