@@ -389,4 +389,109 @@ print(re.split(r"([.?!])","One sentence. Another one? And the last one!")) #([.?
 
 print(re.sub(r"[\w.%+-]+@[\w.-]+","[REDACTED]","Received an email from go_nuts95@my.example.com"))
 
-print(re.sub(r"^([\w .-]), ([\w .-]*)$",r"\2 \1","Maddali, Srilakshmi"))
+print(re.sub(r"^([\w .-]), ([\w .-]*)$",r"\2 \1", "Maddali, Srilakshmi"))
+
+
+##########################################################################
+"""
+The convert_phone_number function checks for a U.S. phone number 
+format: XXX-XXX-XXXX (3 digits followed by a dash, 3 more digits followed by a dash, and 4 digits),
+ and converts it to a more formal format that looks like this: (XXX) XXX-XXXX. Fill in the regular expression to complete this function.
+"""
+
+
+
+
+import re
+def convert_phone_number(phone):
+  result = re.sub(r"\b([0-9]{3})-([0-9]{3})-([0-9]{4})\b",r"(\1) \2-\3",phone)
+  #result=re.search(r"([0-9]{3})-([0-9]{3})-([0-9]{4})",phone)
+  return result
+
+print(convert_phone_number("My number is 212-345-9999.")) # My number is (212) 345-9999.
+print(convert_phone_number("Please call 888-555-1234")) # Please call (888) 555-1234
+print(convert_phone_number("123-123-12345")) # 123-123-12345
+print(convert_phone_number("Phone number of Buckingham Palace is +44 303 123 7300")) # Phone number of Buckingham Palace is +44 303 123 7300
+
+
+"""
+We're working with a CSV file, which contains employee information. Each record has a name field, 
+followed by a phone number field, and a role field. The phone number field contains U.S. phone numbers, 
+and needs to be modified to the international format, with "+1-" in front of the phone number.
+ Fill in the regular expression, using groups, to use the transform_record function to do that.
+"""
+import re
+def transform_record(record):
+  new_record = re.sub(r"\b(\d{3})-([0-9]{3}-?\d{4})\b",r"+1-\1-\2",record)
+  #new_record=re.search(r"\b(\d{3})-([0-9]{3}-?\d{4})\b",record)
+  return new_record
+
+print(transform_record("Sabrina Green,802-867-5309,System Administrator"))
+# Sabrina Green,+1-802-867-5309,System Administrator
+
+print(transform_record("Eli Jones,684-3481127,IT specialist"))
+# Eli Jones,+1-684-3481127,IT specialist
+
+print(transform_record("Melody Daniels,846-687-7436,Programmer"))
+# Melody Daniels,+1-846-687-7436,Programmer
+
+print(transform_record("Charlie Rivera,698-746-3357,Web Developer"))
+# Charlie Rivera,+1-698-746-3357,Web Developer
+
+"""
+The multi_vowel_words function returns all words with 3 or more 
+consecutive vowels (a, e, i, o, u). Fill in the regular expression to do that.
+"""
+import re
+def multi_vowel_words(text):
+  pattern = r"[a-zA-Z]*[aeiou]{3,}[a-zA-Z]*"
+  result = re.findall(pattern, text)
+  return result
+
+print(multi_vowel_words("Life is beautiful"))
+# ['beautiful']
+
+print(multi_vowel_words("Obviously, the queen is courageous and gracious."))
+# ['Obviously', 'queen', 'courageous', 'gracious']
+
+print(multi_vowel_words("The rambunctious children had to sit quietly and await their delicious dinner."))
+# ['rambunctious', 'quietly', 'delicious']
+
+print(multi_vowel_words("The order of a data queue is First In First Out (FIFO)"))
+# ['queue']
+
+print(multi_vowel_words("Hello world!"))
+# []
+
+
+import re
+pattern = r"USER \((\w+)\)$"
+line = "JUl 6 14:04:09 computer.name CRON[29440]:USER (naughty_user)"
+result = re.search(pattern,line)
+print(result[1])
+
+"""
+We're using the same syslog, and we want to display the date, time, and process id that's inside the square brackets. 
+We can read each line of the syslog and pass the contents to the show_time_of_pid function. 
+Fill in the gaps to extract the date, time, and process id from the passed line, and return this format: Jul 6 14:01:23 pid:29440.
+"""
+
+#(\[(\d+)\])
+
+import re
+def show_time_of_pid(line):
+  pattern = r'(^.*:\d{2}\b).+\[(\d+)\]' ####to check it once again
+  result = re.search(pattern, line)
+  return '{} pid:{}'.format(result[1], result[2])
+
+print(show_time_of_pid("Jul 6 14:01:23 computer.name CRON[29440]: USER (good_user)")) # Jul 6 14:01:23 pid:29440
+
+print(show_time_of_pid("Jul 6 14:02:08 computer.name jam_tag=psim[29187]: (UUID:006)")) # Jul 6 14:02:08 pid:29187
+
+print(show_time_of_pid("Jul 6 14:02:09 computer.name jam_tag=psim[29187]: (UUID:007)")) # Jul 6 14:02:09 pid:29187
+
+print(show_time_of_pid("Jul 6 14:03:01 computer.name CRON[29440]: USER (naughty_user)")) # Jul 6 14:03:01 pid:29440
+
+print(show_time_of_pid("Jul 6 14:03:40 computer.name cacheclient[29807]: start syncing from \"0xDEADBEEF\"")) # Jul 6 14:03:40 pid:29807
+
+
