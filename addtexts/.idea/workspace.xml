@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aaa80f2e-8b69-47fd-a2e6-f70b0ca08a37" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="aaa80f2e-8b69-47fd-a2e6-f70b0ca08a37" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../AWS-ML/clean_code/clothing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AWS-ML/clean_code/shirt_example.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../django/crm/static/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AWS-ML/clean_code/shirt.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AWS-ML/clean_code/shirt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,21 +20,19 @@
       </list>
     </option>
   </component>
-  <component name="ProjectId" id="1UfXfnYD74i8urtulrdfe8t9B9w" />
-  <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="ProjectId" id="1UfXfnYD74i8urtulrdfe8t9B9w" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RunManager">
     <configuration name="texting" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -71,5 +74,23 @@
       <updated>1575748728700</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1659" height="259" key="GridCell.Tab.0.bottom" timestamp="1593168126296">
+      <screen x="0" y="23" width="1680" height="966" />
+    </state>
+    <state width="1659" height="259" key="GridCell.Tab.0.bottom/0.23.1680.966@0.23.1680.966" timestamp="1593168126296" />
+    <state width="1659" height="259" key="GridCell.Tab.0.center" timestamp="1593168126295">
+      <screen x="0" y="23" width="1680" height="966" />
+    </state>
+    <state width="1659" height="259" key="GridCell.Tab.0.center/0.23.1680.966@0.23.1680.966" timestamp="1593168126295" />
+    <state width="1659" height="259" key="GridCell.Tab.0.left" timestamp="1593168126295">
+      <screen x="0" y="23" width="1680" height="966" />
+    </state>
+    <state width="1659" height="259" key="GridCell.Tab.0.left/0.23.1680.966@0.23.1680.966" timestamp="1593168126295" />
+    <state width="1659" height="259" key="GridCell.Tab.0.right" timestamp="1593168126295">
+      <screen x="0" y="23" width="1680" height="966" />
+    </state>
+    <state width="1659" height="259" key="GridCell.Tab.0.right/0.23.1680.966@0.23.1680.966" timestamp="1593168126295" />
   </component>
 </project>
